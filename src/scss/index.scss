@@ -1,0 +1,101 @@
+@import './common.scss';
+@import './iconfont.scss';
+@import './reset.scss';
+html,
+body {
+    @extend %full;
+}
+
+.box {
+    @extend %full;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    .header {
+        height: px2rem(50px);
+        width: 100%;
+        background: white;
+        line-height: px2rem(50px);
+        display: flex;
+        i {
+            font-size: px2rem(25px);
+            font-weight: 600;
+            margin-left: px2rem(15px);
+        }
+        span {
+            flex: 1;
+            text-align: center;
+            font-size: px2rem(20px);
+            margin-left: px2rem(-15px);
+        }
+    }
+    .container {
+        flex: 1;
+        .Dl {
+            height: px2rem(90px);
+            width: 100%;
+            margin-top: px2rem(15px);
+            border-bottom: 2px solid #ccc;
+            background: white;
+            display: flex;
+            dt {
+                display: inline;
+                margin: px2rem(13px) px2rem(20px);
+                img {
+                    width: px2rem(70px);
+                    height: px2rem(65px);
+                }
+            }
+            span {
+                line-height: px2rem(90px);
+                font-size: px2rem(18px)
+            }
+        }
+        .list {
+            li {
+                height: px2rem(60px);
+                width: 100%;
+                background: white;
+                line-height: px2rem(60px);
+                position: relative;
+                border-bottom: 1px solid #ccc;
+                i {
+                    position: absolute;
+                    right: px2rem(20px);
+                    font-size: px2rem(18px);
+                }
+                img {
+                    height: px2rem(18px);
+                    width: px2rem(18px);
+                    margin: px2rem(-5px) px2rem(20px);
+                }
+                span {
+                    font-size: px2rem(14px);
+                }
+            }
+        }
+    }
+    .footer {
+        height: px2rem(50px);
+        width: 100%;
+        background: #313131;
+        position: relative;
+        img {
+            position: absolute;
+            right: px2rem(20px);
+            top: px2rem(5px);
+            height: px2rem(40px);
+            width: px2rem(40px);
+        }
+        ul {
+            margin-top: px2rem(5px);
+            li {
+                margin-left: px2rem(15px);
+                color: white;
+                &:nth-child(1) {
+                    font-size: px2rem(14px);
+                }
+            }
+        }
+    }
+}
